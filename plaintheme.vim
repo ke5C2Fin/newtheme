@@ -1,6 +1,6 @@
 " Vim color scheme
 "
-" Name: newcolor.vim
+" Name: plaintheme.vim
 " Maintainer: Kevin H
 " Version: 0.0.1
 
@@ -9,7 +9,7 @@ highlight clear
 if exists('syntax_on')
     syntax reset
 endif
-let g:colors_name = 'newcolor'
+let g:colors_name = 'plaintheme'
 
 if &t_Co == 256
     hi Normal cterm=NONE ctermfg=Black ctermbg=230
