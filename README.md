@@ -1,0 +1,2 @@
+# plaintheme
+colorscheme for vi
