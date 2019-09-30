@@ -13,21 +13,22 @@ let g:colors_name = 'plaintheme'
 
 if &t_Co == 256
     hi Normal cterm=NONE ctermfg=Black ctermbg=230
-    hi Comment cterm=NONE ctermfg=37
-    hi Search cterm=NONE ctermfg=fg ctermbg=Yellow
-    hi Visual cterm=NONE ctermfg=fg ctermbg=Yellow
+    hi Comment cterm=NONE ctermfg=37 ctermbg=bg
 else
-    hi Normal cterm=NONE ctermfg=Black ctermbg=Yellow
-    hi Comment cterm=NONE ctermfg=Cyan
-    hi Search cterm=NONE ctermfg=fg ctermbg=Brown
-    hi Visual cterm=NONE ctermfg=fg ctermbg=Brown
+"need to figure out how to get Yellow as background and switch Grey back to Yellow and DarkCyan back to Cyan
+    hi Normal cterm=NONE ctermfg=Black ctermbg=Grey
+    hi Comment cterm=NONE ctermfg=DarkCyan
 endif
 
+"maybe a single thing to map all the fg/Yellow to
 hi MatchParen cterm=NONE ctermfg=Red ctermbg=bg
-"hi ModeMsg cterm=NONE ctermfg=DarkMagenta ctermbg=bg
 hi Error cterm=NONE ctermfg=fg ctermbg=Red
 hi ColorColumn cterm=NONE ctermfg=fg ctermbg=DarkRed
 hi LineNr cterm=NONE ctermfg=LightGrey ctermbg=bg
+hi Search cterm=NONE ctermfg=fg ctermbg=Yellow
+hi Visual cterm=NONE ctermfg=fg ctermbg=Yellow
+hi CursorColumn cterm=NONE ctermfg=fg ctermbg=Yellow
+hi CursorLine cterm=NONE ctermfg=fg ctermbg=Yellow
 hi StatusLine cterm=NONE ctermbg=DarkMagenta ctermfg=bg
 hi StatusLineNC cterm=reverse
 
@@ -73,8 +74,8 @@ highlight! link Underlined Normal
 highlight! link Conceal Normal
 highlight! link Cursor Normal
 highlight! link CursorIM Normal
-highlight! link CursorColumn Normal
-highlight! link CursorLine Normal
+"highlight! link CursorColumn Normal
+"highlight! link CursorLine Normal
 highlight! link DiffAdd Normal
 highlight! link DiffChange Normal
 highlight! link DiffDelete Normal
