@@ -4,35 +4,34 @@
 " Maintainer: Kevin H
 " Version: 0.0.2
 
-set background=light
 highlight clear
+set background=light
 if exists('syntax_on')
     syntax reset
 endif
 let g:colors_name = 'plaintheme'
 
 if &t_Co == 256
-    hi Normal cterm=NONE ctermfg=Black ctermbg=230
-    hi Comment cterm=NONE ctermfg=37 ctermbg=bg
+    hi Normal ctermfg=Black ctermbg=230
+    hi Comment ctermfg=37 ctermbg=bg
+    hi LineNr ctermfg=LightGrey ctermbg=bg
 else
-"need to figure out how to get Yellow as background and switch Grey back to Yellow and DarkCyan back to Cyan
-    hi Normal cterm=NONE ctermfg=Black ctermbg=Grey
-    hi Comment cterm=NONE ctermfg=DarkCyan
+    hi Normal ctermfg=Black ctermbg=Grey
+    hi Comment ctermfg=DarkCyan
+    hi LineNr ctermfg=White ctermbg=bg
 endif
 
-"maybe a single thing to map all the fg/Yellow to
-hi MatchParen cterm=NONE ctermfg=Red ctermbg=bg
-hi Error cterm=NONE ctermfg=fg ctermbg=Red
-hi ColorColumn cterm=NONE ctermfg=fg ctermbg=DarkRed
-hi LineNr cterm=NONE ctermfg=LightGrey ctermbg=bg
-hi Search cterm=NONE ctermfg=fg ctermbg=Yellow
-hi Visual cterm=NONE ctermfg=fg ctermbg=Yellow
-hi CursorColumn cterm=NONE ctermfg=fg ctermbg=Yellow
-hi CursorLine cterm=NONE ctermfg=fg ctermbg=Yellow
-hi StatusLine cterm=NONE ctermbg=DarkMagenta ctermfg=bg
+hi MatchParen ctermfg=Red ctermbg=bg
+hi Error ctermfg=fg ctermbg=Red
+hi ColorColumn ctermfg=fg ctermbg=DarkRed
+hi Search ctermfg=fg ctermbg=Yellow
+hi Visual ctermfg=fg ctermbg=Yellow
+hi CursorColumn ctermfg=fg ctermbg=Yellow
+hi CursorLine ctermfg=fg ctermbg=Yellow
+hi StatusLine ctermbg=DarkMagenta ctermfg=bg
 hi StatusLineNC cterm=reverse
 
-" ?
+" is there some way to 'unset' all of these?
 highlight! link Boolean Normal
 highlight! link Character Normal
 "highlight! link Comment Normal
