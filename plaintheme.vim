@@ -17,7 +17,7 @@ if &t_Co == 256
     hi LineNr ctermfg=LightGrey ctermbg=bg
 else
     hi Normal ctermfg=Black ctermbg=Grey
-    hi Comment ctermfg=DarkCyan
+    hi Comment ctermfg=DarkCyan ctermbg=bg
     hi LineNr ctermfg=White ctermbg=bg
 endif
 
