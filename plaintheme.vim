@@ -16,6 +16,7 @@ if &t_Co == 256
     hi Comment ctermfg=37 ctermbg=bg
     hi LineNr ctermfg=LightGrey ctermbg=bg
 else
+    "need light yellow background for vis/search/etc
     hi Normal ctermfg=Black ctermbg=Grey
     hi Comment ctermfg=Cyan ctermbg=bg
     hi LineNr ctermfg=White ctermbg=bg
