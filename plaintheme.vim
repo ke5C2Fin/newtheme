@@ -24,8 +24,8 @@ endif
 hi MatchParen ctermfg=Red ctermbg=bg
 hi Error ctermfg=fg ctermbg=Red
 hi ColorColumn ctermfg=fg ctermbg=DarkRed
-hi Search ctermfg=fg ctermbg=Yellow
-hi Visual ctermfg=fg ctermbg=Yellow
+hi Search ctermbg=Yellow
+hi Visual ctermbg=Yellow
 hi CursorColumn ctermfg=fg ctermbg=Yellow
 hi CursorLine ctermfg=fg ctermbg=Yellow
 hi StatusLine ctermbg=DarkMagenta ctermfg=bg
