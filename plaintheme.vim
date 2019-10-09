@@ -28,7 +28,7 @@ hi Search ctermbg=Yellow
 hi Visual ctermbg=Yellow
 hi CursorColumn ctermfg=fg ctermbg=Yellow
 hi CursorLine ctermfg=fg ctermbg=Yellow
-hi StatusLine ctermbg=DarkMagenta ctermfg=bg
+hi StatusLine ctermbg=bg ctermfg=DarkMagenta
 hi StatusLineNC cterm=reverse
 
 " is there some way to 'unset' all of these?
