@@ -11,17 +11,20 @@ if exists('syntax_on')
 endif
 let g:colors_name = 'plaintheme'
 
+"if &t_Co > 256
 if &t_Co == 256
     hi Normal ctermfg=Black ctermbg=230
     hi Comment ctermfg=37 ctermbg=bg
     hi LineNr ctermfg=LightGrey ctermbg=bg
 else
-    hi Normal ctermfg=Black ctermbg=LightGrey
-    hi Comment ctermfg=Cyan ctermbg=bg
+    "set t_Co == 16
+    hi Normal ctermfg=Black ctermbg=White
+    hi Comment ctermfg=DarkCyan ctermbg=bg
     hi LineNr ctermfg=15 ctermbg=bg
 endif
 
 hi MatchParen ctermfg=Red ctermbg=bg
+"maybe remove error - eg doesn't work for shell substrings
 hi Error ctermfg=fg ctermbg=Red
 hi ColorColumn ctermfg=fg ctermbg=DarkRed
 hi Search ctermbg=Yellow
