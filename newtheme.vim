@@ -1,15 +1,15 @@
 " Vim color scheme
 "
-" Name: plaintheme.vim
+" Name: newtheme.vim
 " Maintainer: Kevin H
-" Version: 0.0.2
+" Version: 0.0.3
 
 highlight clear
 set background=light
 if exists('syntax_on')
     syntax reset
 endif
-let g:colors_name = 'plaintheme'
+let g:colors_name = 'newtheme'
 
 "if &t_Co > 256
 if &t_Co == 256
