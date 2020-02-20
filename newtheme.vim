@@ -1,29 +1,31 @@
 " Vim color scheme
-"
 " Name: newtheme.vim
 " Maintainer: Kevin H
 " Version: 0.0.3
 
 highlight clear
-set background=light
 if exists('syntax_on')
     syntax reset
 endif
 let g:colors_name = 'newtheme'
+set background=light
 
 "if &t_Co > 256
 if &t_Co == 256
-    hi Normal ctermfg=Black ctermbg=230
+    hi Normal term=NONE cterm=NONE ctermfg=Black ctermbg=230 gui=NONE
     hi Comment ctermfg=37 ctermbg=bg
     hi LineNr ctermfg=LightGrey ctermbg=bg
 else
-    "set t_Co == 16
-    hi Normal ctermfg=Black ctermbg=White
+    ""set t_Co == 16
+    hi Normal term=NONE cterm=NONE ctermfg=Black ctermbg=White gui=NONE
     hi Comment ctermfg=DarkCyan ctermbg=bg
     hi LineNr ctermfg=15 ctermbg=bg
 endif
+"hi Normal term=NONE cterm=NONE ctermfg=Black ctermbg=bg_color gui=NONE
 
 hi MatchParen ctermfg=Red ctermbg=bg
+"maybe remove error - eg doesn't work for shell substrings
+"hi Error ctermfg=fg ctermbg=Red
 hi ColorColumn ctermfg=fg ctermbg=DarkRed
 hi Search ctermbg=Yellow
 hi Visual ctermbg=Yellow
@@ -33,6 +35,7 @@ hi StatusLine ctermbg=bg ctermfg=DarkMagenta
 hi StatusLineNC cterm=reverse
 
 " is there some way to 'unset' all of these?
+highlight! link Error Normal
 highlight! link Boolean Normal
 highlight! link Character Normal
 "highlight! link Comment Normal
