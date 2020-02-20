@@ -24,8 +24,6 @@ endif
 "hi Normal term=NONE cterm=NONE ctermfg=Black ctermbg=bg_color gui=NONE
 
 hi MatchParen ctermfg=Red ctermbg=bg
-"maybe remove error - eg doesn't work for shell substrings
-"hi Error ctermfg=fg ctermbg=Red
 hi ColorColumn ctermfg=fg ctermbg=DarkRed
 hi Search ctermbg=Yellow
 hi Visual ctermbg=Yellow
