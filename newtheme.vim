@@ -24,13 +24,11 @@ else
 endif
 
 hi MatchParen ctermfg=Red ctermbg=bg
-"maybe remove error - eg doesn't work for shell substrings
-hi Error ctermfg=fg ctermbg=Red
 hi ColorColumn ctermfg=fg ctermbg=DarkRed
 hi Search ctermbg=Yellow
 hi Visual ctermbg=Yellow
 hi CursorColumn ctermfg=fg ctermbg=Yellow
-hi CursorLine ctermfg=fg ctermbg=Yellow
+hi CursorLine cterm=none ctermfg=fg ctermbg=Yellow
 hi StatusLine ctermbg=bg ctermfg=DarkMagenta
 hi StatusLineNC cterm=reverse
 
@@ -83,6 +81,7 @@ highlight! link DiffChange Normal
 highlight! link DiffDelete Normal
 highlight! link DiffText Normal
 highlight! link EndOfBuffer Normal
+highlight! link Error Normal
 highlight! link ErrorMsg Normal
 highlight! link VertSplit Normal
 highlight! link Folded Normal
