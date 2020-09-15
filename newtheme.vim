@@ -16,7 +16,7 @@ if &t_Co == 256
     hi Comment ctermfg=37 ctermbg=bg
     hi LineNr ctermfg=LightGrey ctermbg=bg
 else
-    ""set t_Co == 16
+    "set t_Co == 16
     hi Normal term=NONE cterm=NONE ctermfg=Black ctermbg=White gui=NONE
     hi Comment ctermfg=DarkCyan ctermbg=bg
     hi LineNr ctermfg=15 ctermbg=bg
@@ -31,6 +31,7 @@ hi CursorColumn ctermfg=fg ctermbg=Yellow
 hi CursorLine cterm=none ctermfg=fg ctermbg=Yellow
 hi StatusLine ctermbg=bg ctermfg=DarkMagenta
 hi StatusLineNC cterm=reverse
+hi NonText ctermfg=LightBlue 
 
 " is there some way to 'unset' all of these?
 highlight! link Error Normal
@@ -94,7 +95,7 @@ highlight! link CursorLineNr Normal
 "highlight! link MatchParen Normal
 highlight! link ModeMsg Normal
 highlight! link MoreMsg Normal
-highlight! link NonText Normal
+"highlight! link NonText Normal
 highlight! link Pmenu Normal
 highlight! link PmenuSel Normal
 highlight! link PmenuSbar Normal
