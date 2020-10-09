@@ -23,7 +23,7 @@ else
 endif
 "hi Normal term=NONE cterm=NONE ctermfg=Black ctermbg=bg_color gui=NONE
 
-hi MatchParen ctermfg=Red ctermbg=bg
+hi MatchParen ctermfg=Blue ctermbg=bg
 hi ColorColumn ctermfg=fg ctermbg=DarkRed
 hi Search ctermbg=Yellow
 hi Visual ctermbg=Yellow
