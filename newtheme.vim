@@ -34,7 +34,6 @@ hi StatusLineNC cterm=reverse
 hi NonText ctermfg=LightBlue 
 
 " is there some way to 'unset' all of these?
-highlight! link Error Normal
 highlight! link Boolean Normal
 highlight! link Character Normal
 "highlight! link Comment Normal
