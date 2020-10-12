@@ -1,7 +1,7 @@
 " Vim color scheme
 " Name: newtheme.vim
 " Maintainer: Kevin H
-" Version: 0.0.3
+" Version: 0.0.5
 
 highlight clear
 if exists('syntax_on')
@@ -15,12 +15,13 @@ if &t_Co == 256
     hi Normal term=NONE cterm=NONE ctermfg=Black ctermbg=230 gui=NONE
     hi Comment ctermfg=37 ctermbg=bg
     hi LineNr ctermfg=LightGrey ctermbg=bg
-else "if &t_Co == 8
+"elseif &t_Co == 16
+"elseif &t_Co == 8
+else
     hi Normal term=NONE cterm=NONE ctermfg=Black ctermbg=White gui=NONE
     hi Comment ctermfg=DarkBlue ctermbg=bg
     hi LineNr ctermfg=15 ctermbg=bg
 endif
-    "set t_Co == 16
 "hi Normal term=NONE cterm=NONE ctermfg=Black ctermbg=bg_color gui=NONE
 
 hi MatchParen ctermfg=Blue ctermbg=bg
@@ -29,11 +30,10 @@ hi Search ctermbg=Yellow
 hi Visual ctermbg=Yellow
 hi CursorColumn ctermfg=fg ctermbg=Yellow
 hi CursorLine cterm=none ctermfg=fg ctermbg=Yellow
-hi StatusLine ctermbg=bg ctermfg=DarkMagenta
-hi StatusLineNC cterm=reverse
+hi StatusLine cterm=reverse
 hi NonText ctermfg=LightBlue 
 hi DiffAdd ctermbg=DarkRed
-hi DiffChange ctermbg=Red
+hi DiffChange ctermbg=DarkRed
 hi DiffDelete ctermbg=DarkRed
 hi DiffText ctermbg=Yellow
 
@@ -113,7 +113,7 @@ highlight! link SpellCap Normal
 highlight! link SpellLocal Normal
 highlight! link SpellRare Normal
 "highlight! link StatusLine Normal
-"highlight! link StatusLineNC Normal
+highlight! link StatusLineNC Normal
 "highlight! link StatusLineTerm Normal
 "highlight! link StatusLineTermNC Normal
 highlight! link TabLine Normal
