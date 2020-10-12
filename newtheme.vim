@@ -15,12 +15,12 @@ if &t_Co == 256
     hi Normal term=NONE cterm=NONE ctermfg=Black ctermbg=230 gui=NONE
     hi Comment ctermfg=37 ctermbg=bg
     hi LineNr ctermfg=LightGrey ctermbg=bg
-else
-    "set t_Co == 16
+else "if &t_Co == 8
     hi Normal term=NONE cterm=NONE ctermfg=Black ctermbg=White gui=NONE
-    hi Comment ctermfg=DarkCyan ctermbg=bg
+    hi Comment ctermfg=DarkBlue ctermbg=bg
     hi LineNr ctermfg=15 ctermbg=bg
 endif
+    "set t_Co == 16
 "hi Normal term=NONE cterm=NONE ctermfg=Black ctermbg=bg_color gui=NONE
 
 hi MatchParen ctermfg=Blue ctermbg=bg
@@ -32,6 +32,10 @@ hi CursorLine cterm=none ctermfg=fg ctermbg=Yellow
 hi StatusLine ctermbg=bg ctermfg=DarkMagenta
 hi StatusLineNC cterm=reverse
 hi NonText ctermfg=LightBlue 
+hi DiffAdd ctermbg=DarkRed
+hi DiffChange ctermbg=Red
+hi DiffDelete ctermbg=DarkRed
+hi DiffText ctermbg=Yellow
 
 " is there some way to 'unset' all of these?
 highlight! link Error Normal
@@ -78,10 +82,10 @@ highlight! link Cursor Normal
 highlight! link CursorIM Normal
 "highlight! link CursorColumn Normal
 "highlight! link CursorLine Normal
-highlight! link DiffAdd Normal
-highlight! link DiffChange Normal
-highlight! link DiffDelete Normal
-highlight! link DiffText Normal
+"highlight! link DiffAdd Normal
+"highlight! link DiffChange Normal
+"highlight! link DiffDelete Normal
+"highlight! link DiffText Normal
 highlight! link EndOfBuffer Normal
 highlight! link Error Normal
 highlight! link ErrorMsg Normal
