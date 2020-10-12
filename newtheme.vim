@@ -32,10 +32,10 @@ hi CursorColumn ctermfg=fg ctermbg=Yellow
 hi CursorLine cterm=none ctermfg=fg ctermbg=Yellow
 hi StatusLine cterm=reverse
 hi NonText ctermfg=LightBlue 
-hi DiffAdd ctermbg=DarkRed
-hi DiffChange ctermbg=DarkRed
-hi DiffDelete ctermbg=DarkRed
-hi DiffText ctermbg=Yellow
+hi DiffAdd ctermfg=NONE ctermbg=Yellow
+hi DiffChange ctermbg=Yellow
+hi DiffDelete ctermfg=LightBlue ctermbg=NONE
+hi DiffText ctermfg=Yellow ctermbg=Red
 
 " is there some way to 'unset' all of these?
 highlight! link Error Normal
