@@ -1,7 +1,7 @@
 " Vim color scheme
 " Name: newtheme.vim
 " Maintainer: Kevin H
-" Version: 0.0.3
+" Version: 0.0.5
 
 highlight clear
 if exists('syntax_on')
@@ -15,10 +15,11 @@ if &t_Co == 256
     hi Normal term=NONE cterm=NONE ctermfg=Black ctermbg=230 gui=NONE
     hi Comment ctermfg=37 ctermbg=bg
     hi LineNr ctermfg=LightGrey ctermbg=bg
+"elseif &t_Co == 16
+"elseif &t_Co == 8
 else
-    "set t_Co == 16
     hi Normal term=NONE cterm=NONE ctermfg=Black ctermbg=White gui=NONE
-    hi Comment ctermfg=DarkCyan ctermbg=bg
+    hi Comment ctermfg=DarkBlue ctermbg=bg
     hi LineNr ctermfg=15 ctermbg=bg
 endif
 "hi Normal term=NONE cterm=NONE ctermfg=Black ctermbg=bg_color gui=NONE
@@ -29,9 +30,12 @@ hi Search ctermbg=Yellow
 hi Visual ctermbg=Yellow
 hi CursorColumn ctermfg=fg ctermbg=Yellow
 hi CursorLine cterm=none ctermfg=fg ctermbg=Yellow
-hi StatusLine ctermbg=bg ctermfg=DarkMagenta
-hi StatusLineNC cterm=reverse
+hi StatusLine cterm=reverse
 hi NonText ctermfg=LightBlue 
+hi DiffAdd ctermfg=NONE ctermbg=Yellow
+hi DiffChange ctermbg=Yellow
+hi DiffDelete ctermfg=LightBlue ctermbg=NONE
+hi DiffText ctermfg=Yellow ctermbg=Red
 
 " is there some way to 'unset' all of these?
 highlight! link Boolean Normal
@@ -77,10 +81,10 @@ highlight! link Cursor Normal
 highlight! link CursorIM Normal
 "highlight! link CursorColumn Normal
 "highlight! link CursorLine Normal
-highlight! link DiffAdd Normal
-highlight! link DiffChange Normal
-highlight! link DiffDelete Normal
-highlight! link DiffText Normal
+"highlight! link DiffAdd Normal
+"highlight! link DiffChange Normal
+"highlight! link DiffDelete Normal
+"highlight! link DiffText Normal
 highlight! link EndOfBuffer Normal
 highlight! link Error Normal
 highlight! link ErrorMsg Normal
@@ -108,7 +112,7 @@ highlight! link SpellCap Normal
 highlight! link SpellLocal Normal
 highlight! link SpellRare Normal
 "highlight! link StatusLine Normal
-"highlight! link StatusLineNC Normal
+highlight! link StatusLineNC Normal
 "highlight! link StatusLineTerm Normal
 "highlight! link StatusLineTermNC Normal
 highlight! link TabLine Normal
