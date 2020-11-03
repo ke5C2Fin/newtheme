@@ -12,30 +12,30 @@ set background=light
 
 "if &t_Co > 256
 if &t_Co == 256
-    hi Normal term=NONE cterm=NONE ctermfg=Black ctermbg=230 gui=NONE
-    hi Comment ctermfg=37 ctermbg=bg
-    hi LineNr ctermfg=LightGrey ctermbg=bg
+    hi Normal   ctermfg=Black       ctermbg=230     cterm=NONE  term=NONE   gui=NONE
+    hi Comment  ctermfg=37          ctermbg=bg
+    hi LineNr   ctermfg=LightGrey   ctermbg=bg
 "elseif &t_Co == 16
 "elseif &t_Co == 8
 else
-    hi Normal term=NONE cterm=NONE ctermfg=Black ctermbg=White gui=NONE
-    hi Comment ctermfg=DarkBlue ctermbg=bg
-    hi LineNr ctermfg=15 ctermbg=bg
+    hi Normal   ctermfg=Black       ctermbg=White   cterm=NONE  term=NONE   gui=NONE
+    hi Comment  ctermfg=DarkBlue    ctermbg=bg
+    hi LineNr   ctermfg=15          ctermbg=bg
 endif
 "hi Normal term=NONE cterm=NONE ctermfg=Black ctermbg=bg_color gui=NONE
 
-hi MatchParen ctermfg=Blue ctermbg=bg
-hi ColorColumn ctermfg=fg ctermbg=DarkRed
-hi Search ctermbg=Yellow
-hi Visual ctermbg=Yellow
-hi CursorColumn ctermfg=fg ctermbg=Yellow
-hi CursorLine cterm=none ctermfg=fg ctermbg=Yellow
-hi StatusLine cterm=reverse
-hi NonText ctermfg=LightBlue 
-hi DiffAdd ctermfg=NONE ctermbg=Yellow
-hi DiffChange ctermbg=Yellow
-hi DiffDelete ctermfg=LightBlue ctermbg=NONE
-hi DiffText ctermfg=Yellow ctermbg=Red
+hi MatchParen   ctermfg=Blue        ctermbg=bg
+hi ColorColumn  ctermfg=fg          ctermbg=DarkRed
+hi Search                           ctermbg=Yellow
+hi Visual                           ctermbg=Yellow
+hi CursorColumn ctermfg=fg          ctermbg=Yellow
+hi CursorLine   ctermfg=fg          ctermbg=Yellow  cterm=NONE 
+hi StatusLine                                       cterm=reverse
+hi NonText      ctermfg=LightBlue   ctermbg=bg      cterm=NONE 
+hi DiffAdd      ctermfg=NONE        ctermbg=Yellow
+hi DiffChange                       ctermbg=Yellow
+hi DiffDelete   ctermfg=LightBlue   ctermbg=NONE
+hi DiffText     ctermfg=Yellow      ctermbg=Red
 
 " is there some way to 'unset' all of these?
 highlight! link Boolean Normal
