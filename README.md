@@ -9,5 +9,5 @@ neovim
 ```
 vis
 ```
+ln -s ${PWD}/newtheme.lua /usr/share/vis/themes/newtheme.lua
 ```
-
