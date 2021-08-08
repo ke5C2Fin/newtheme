@@ -11,5 +11,5 @@ neovim
 vis
 ```
 ln -s ${PWD}/newtheme.lua /usr/share/vis/themes/newtheme.lua
-set theme newtheme
+:set theme newtheme
 ```
