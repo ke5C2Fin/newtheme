@@ -1,6 +1,6 @@
 " Vim color scheme
 " Name: newtheme.vim
-" Maintainer: Kevin H
+" Maintainer: Kevin Harrington
 " Version: 0.0.5
 
 highlight clear
@@ -14,13 +14,13 @@ set background=light
 if &t_Co == 256
     hi Normal   ctermfg=Black       ctermbg=230     cterm=NONE  term=NONE   gui=NONE
     hi Comment  ctermfg=37          ctermbg=bg
-    hi LineNr   ctermfg=LightGrey   ctermbg=bg
+    hi LineNr   ctermfg=251         ctermbg=bg
 "elseif &t_Co == 16
 "elseif &t_Co == 8
 else
     hi Normal   ctermfg=Black       ctermbg=White   cterm=NONE  term=NONE   gui=NONE
-    hi Comment  ctermfg=DarkBlue    ctermbg=bg
-    hi LineNr   ctermfg=15          ctermbg=bg
+    hi Comment  ctermfg=DarkCyan    ctermbg=bg
+    hi LineNr   ctermfg=DarkGrey    ctermbg=bg
 endif
 "hi Normal term=NONE cterm=NONE ctermfg=Black ctermbg=bg_color gui=NONE
 
