@@ -1,5 +1,5 @@
 # newscheme
-colorscheme for vim  
+colorscheme for vim, vis
 vi(m)
 ```
 ln -s ${PWD}/newtheme.vim /usr/share/vim/vim??/colors/newtheme.vim
