@@ -14,7 +14,7 @@ set background=light
 if &t_Co == 256
     hi Normal   ctermfg=Black       ctermbg=230     cterm=NONE  term=NONE   gui=NONE
     hi Comment  ctermfg=37          ctermbg=bg
-    hi LineNr   ctermfg=250         ctermbg=bg
+    hi LineNr   ctermfg=251         ctermbg=bg
 "elseif &t_Co == 16
 "elseif &t_Co == 8
 else
