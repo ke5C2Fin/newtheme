@@ -21,8 +21,9 @@ else
 endif
 if &t_Co == 16
     hi LineNr   ctermfg=DarkGrey    ctermbg=bg
+elseif &t_Co == 8
+    hi LineNr   ctermfg=Black       ctermbg=bg
 endif
-"elseif &t_Co == 8
 "hi Normal term=NONE cterm=NONE ctermfg=Black ctermbg=bg_color gui=NONE
 
 hi MatchParen   ctermfg=Blue        ctermbg=bg
