@@ -15,13 +15,14 @@ if &t_Co == 256
     hi Normal   ctermfg=Black       ctermbg=230     cterm=NONE  term=NONE   gui=NONE
     hi Comment  ctermfg=37          ctermbg=bg
     hi LineNr   ctermfg=251         ctermbg=bg
-"elseif &t_Co == 16
-"elseif &t_Co == 8
 else
     hi Normal   ctermfg=Black       ctermbg=White   cterm=NONE  term=NONE   gui=NONE
     hi Comment  ctermfg=DarkCyan    ctermbg=bg
+endif
+if &t_Co == 16
     hi LineNr   ctermfg=DarkGrey    ctermbg=bg
 endif
+"elseif &t_Co == 8
 "hi Normal term=NONE cterm=NONE ctermfg=Black ctermbg=bg_color gui=NONE
 
 hi MatchParen   ctermfg=Blue        ctermbg=bg
