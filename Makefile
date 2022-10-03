@@ -17,3 +17,5 @@ vis: $(T).lua
 
 clean:
 	rm -f /usr/share/vis/themes/$(T).lua /usr/share/vim/vim??/colors/$(T).vim
+
+.PHONY: all vim vis clean
