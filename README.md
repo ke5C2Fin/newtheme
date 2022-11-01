@@ -1,5 +1,8 @@
 # newscheme
 colorscheme for vim, vis
+```
+:so $VIMRUNTIME/syntax/hitest.vim
+```
 vi(m)
 ```
 ln -s ${PWD}/newtheme.vim /usr/share/vim/vim??/colors/newtheme.vim
