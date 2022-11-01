@@ -34,6 +34,7 @@ hi CursorColumn ctermfg=fg          ctermbg=Yellow
 hi CursorLine   ctermfg=fg          ctermbg=Yellow  cterm=NONE 
 hi StatusLine                                       cterm=reverse
 hi NonText      ctermfg=LightBlue   ctermbg=bg      cterm=NONE 
+hi SpecialKey   ctermfg=LightBlue   ctermbg=bg
 hi DiffAdd      ctermfg=NONE        ctermbg=Yellow
 hi DiffChange                       ctermbg=Yellow
 hi DiffDelete   ctermfg=LightBlue   ctermbg=NONE
@@ -108,7 +109,7 @@ highlight! link PmenuThumb Normal
 highlight! link Question Normal
 highlight! link QuickFixLine Normal
 "highlight! link Search Normal
-highlight! link SpecialKey Normal
+"highlight! link SpecialKey Normal
 highlight! link SpellBad Normal
 highlight! link SpellCap Normal
 highlight! link SpellLocal Normal
