@@ -13,6 +13,6 @@ neovim
 ```
 vis
 ```
-ln -s ${PWD}/newtheme.lua /usr/share/vis/themes/newtheme.lua
+ln -s ${PWD}/newtheme.lua ~/.config/vis/themes/newtheme.lua
 :set theme newtheme
 ```
