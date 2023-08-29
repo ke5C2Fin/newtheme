@@ -5,7 +5,7 @@ colorscheme for vim, vis
 ```
 vi(m)
 ```
-ln -s ${PWD}/newtheme.vim /usr/share/vim/vim??/colors/newtheme.vim
+ln -s ${PWD}/newtheme.vim ~/.vim/colors/newtheme.vim
 :colorscheme newtheme
 ```
 neovim
