@@ -1,4 +1,4 @@
-# newscheme
+# newtheme
 colorscheme for (neo)vim, vis
 ```
 :so $VIMRUNTIME/syntax/hitest.vim
