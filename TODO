@@ -1,2 +1,4 @@
-revisit vis,nvim
+revisit nvim
 install via Makefile
+# vis
+non-printing chars light blue 195
