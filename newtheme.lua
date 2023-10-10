@@ -1,9 +1,9 @@
 local lexers = vis.lexers
 
-lexers.STYLE_DEFAULT = 'back:white,fore:black'
+lexers.STYLE_DEFAULT = 'back:230,fore:black'
 lexers.STYLE_NOTHING = ''
 lexers.STYLE_CLASS = 'default'
-lexers.STYLE_COMMENT = 'fore:cyan,bold'
+lexers.STYLE_COMMENT = 'fore:37,bold'
 lexers.STYLE_CONSTANT = 'default'
 lexers.STYLE_DEFINITION = 'default'
 lexers.STYLE_ERROR = 'default'
@@ -22,7 +22,7 @@ lexers.STYLE_WHITESPACE = ''
 lexers.STYLE_EMBEDDED = 'default'
 lexers.STYLE_IDENTIFIER = 'fore:black'
 
-lexers.STYLE_LINENUMBER = 'fore:white,bold'
+lexers.STYLE_LINENUMBER = 'fore:251,bold'
 lexers.STYLE_LINENUMBER_CURSOR = lexers.STYLE_LINENUMBER
 lexers.STYLE_CURSOR = 'reverse'
 lexers.STYLE_CURSOR_PRIMARY = lexers.STYLE_CURSOR..',fore:yellow'
