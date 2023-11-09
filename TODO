@@ -1,4 +1,8 @@
-revisit nvim
-install via Makefile
-# vis
-non-printing chars light blue 195
+# TODO
+## vim
+- shebang line not comment
+## neovim
+- revisit
+- install via Makefile
+## vis
+- non-printing chars light blue 195
