@@ -1,4 +1,7 @@
 # TODO
+## newtheme
+- sometimes lines with `**` are inverted colors
+- search then visual select highlight are same color on top of each other
 ## vim
 - shebang line not comment
 ## neovim
