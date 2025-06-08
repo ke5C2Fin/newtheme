@@ -10,6 +10,7 @@ vim: $(T).vim
 	ln -s $(DIR)/$(T).vim ~/.vim/colors/$(T).vim
 
 vis: $(T).lua
+	mkdir -p ~/.config/vis/themes
 	ln -s $(DIR)/$(T).lua ~/.config/vis/themes/$(T).lua
 
 clean:
