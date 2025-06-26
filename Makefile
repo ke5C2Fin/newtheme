@@ -14,6 +14,7 @@ vis: $(T).lua
 	ln -s $(DIR)/$(T).lua ~/.config/vis/themes/$(T).lua
 
 clean:
-	rm -f ~/.config/vis/themes/$(T).lua ~/.vim/colors/$(T).vim
+	rm -f ~/.vim/colors/$(T).vim
+	rm -f ~/.config/vis/themes/$(T).lua
 
 .PHONY: all vim vis clean
