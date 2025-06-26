@@ -1,3 +1,5 @@
+-- newtheme
+
 local lexers = vis.lexers
 
 lexers.STYLE_DEFAULT = 'back:230,fore:black'
@@ -28,7 +30,7 @@ lexers.STYLE_CURSOR = 'reverse'
 lexers.STYLE_CURSOR_PRIMARY = lexers.STYLE_CURSOR..',fore:202'
 lexers.STYLE_CURSOR_LINE = 'underlined'
 lexers.STYLE_COLOR_COLUMN = 'back:red'
-lexers.STYLE_SELECTION = 'back:black'
+lexers.STYLE_SELECTION = 'back:11'
 lexers.STYLE_STATUS = 'reverse'
 lexers.STYLE_STATUS_FOCUSED = 'reverse,bold'
 lexers.STYLE_SEPARATOR = lexers.STYLE_DEFAULT
