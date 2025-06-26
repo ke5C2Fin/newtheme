@@ -1,14 +1,15 @@
--- newtheme
+-- newtheme (https://github.com/ke5C2Fin/newtheme)
+-- Kevin Harrington
 
 local lexers = vis.lexers
 
 lexers.STYLE_DEFAULT = 'back:230,fore:black'
 lexers.STYLE_NOTHING = ''
 lexers.STYLE_CLASS = 'default'
-lexers.STYLE_COMMENT = 'fore:37,bold'
+lexers.STYLE_COMMENT = 'fore:6'
 lexers.STYLE_CONSTANT = 'default'
 lexers.STYLE_DEFINITION = 'default'
-lexers.STYLE_ERROR = 'default'
+lexers.STYLE_ERROR = 'back:red'
 lexers.STYLE_FUNCTION = 'default'
 lexers.STYLE_KEYWORD = 'default'
 lexers.STYLE_LABEL = 'default'
