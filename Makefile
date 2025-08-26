@@ -16,7 +16,7 @@ vis: $(T).lua
 	ln -s $(DIR)/$(T).lua $(DVIS)/$(T).lua
 
 clean:
- 	rm -f $(DVIM)/$(T).vim
+	rm -f $(DVIM)/$(T).vim
 	rm -f $(DVIS)/$(T).lua
 
 .PHONY: all vim vis clean
