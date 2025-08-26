@@ -7,17 +7,16 @@ DVIM := ~/.vim/colors
 
 all: vim vis
 
-VIMDIR = ~/.vim/colors
 vim: $(T).vim
 	mkdir -p $(DVIM)
 	ln -s $(DIR)/$(T).vim $(DVIM)/$(T).vim
 
-VISDIR = ~/.config/vis/themes
 vis: $(T).lua
 	mkdir -p $(DVIS)
 	ln -s $(DIR)/$(T).lua $(DVIS)/$(T).lua
 
 clean:
-	rm -f $(DVIS)/$(T).lua $(DVIM)/$(T).vim
+ 	rm -f $(DVIM)/$(T).vim
+	rm -f $(DVIS)/$(T).lua
 
 .PHONY: all vim vis clean
