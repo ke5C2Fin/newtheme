@@ -95,11 +95,11 @@ highlight! link SignColumn Normal
 highlight! link IncSearch Normal
 "highlight! link LineNr Normal
 highlight! link CursorLineNr Normal
-highlight! link markdownCode Normal
-highlight! link markdownCodeDelimiter Normal
-highlight! link markdownHeadingDelimiter Normal
-highlight! link markdownItalic Normal
-highlight! link markdownItalicDelimiter Normal
+highlight! link MarkdownCode Normal
+highlight! link MarkdownCodeDelimiter Normal
+highlight! link MarkdownHeadingDelimiter Normal
+highlight! link MarkdownItalic Normal
+highlight! link MarkdownItalicDelimiter Normal
 "highlight! link MatchParen Normal
 highlight! link ModeMsg Normal
 highlight! link MoreMsg Normal
