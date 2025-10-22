@@ -28,7 +28,6 @@ ln -s ${PWD}/newtheme.lua ~/.config/vis/themes/newtheme.lua
 # TODO
 
 ## newtheme
-- sometimes lines with `**` are inverted colors in vim
 - search then visual select highlight are same color on top of each other in vim
 
 ## vim
