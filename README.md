@@ -27,9 +27,6 @@ ln -s ${PWD}/newtheme.lua ~/.config/vis/themes/newtheme.lua
 
 # TODO
 
-## newtheme
-- search then visual select highlight are same color on top of each other in vim
-
 ## vim
 - python docstring comments
   - https://superuser.com/questions/697347/vim-how-to-treat-three-quotations-in-a-row-as-a-comment-rather-than-a-string#697365
