@@ -23,6 +23,13 @@ elseif &t_Co == 8
 endif
 "hi Normal term=NONE cterm=NONE ctermfg=Black ctermbg=bg_color gui=NONE
 
+" darker yellow vis when in diff mode
+let s:diff_vis_yellow = (&t_Co == 256) ? '178' : '3'
+augroup diff_vis_settings
+    autocmd!
+    autocmd FilterWritePre * if &diff | execute 'hi Visual ctermbg=' . s:diff_vis_yellow | endif
+augroup END
+
 hi MatchParen   ctermfg=Blue        ctermbg=bg
 hi ColorColumn  ctermfg=fg          ctermbg=DarkRed
 hi Search                           ctermbg=Yellow
